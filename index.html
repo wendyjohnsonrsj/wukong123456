@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聊城悟空道路救援_24小时拖车电话_搭换电瓶_送油送水</title>
+    <meta name="description" content="聊城悟空道路救援提供24小时汽车救援服务，包括拖车救援、搭电换电瓶、紧急送油、困境救援、补胎换胎等，聊城全市区30分钟到达，服务电话400-808-2010">
+    <meta name="keywords" content="聊城道路救援,聊城拖车电话,聊城汽车搭电,聊城送油救援,悟空道路救援">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* 顶部导航 */
+        .header {
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff6b35;
+        }
+        .logo span {
+            color: #333;
+            font-size: 14px;
+            font-weight: normal;
+            margin-left: 10px;
+        }
+        .phone-btn {
+            background: #ff6b35;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: all 0.3s;
+        }
+        .phone-btn:hover {
+            background: #e55a2b;
+            transform: scale(1.05);
+        }
+
+        /* 首屏Banner */
+        .hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .hero h1 span {
+            color: #ff6b35;
+        }
+        .hero .subtitle {
+            font-size: 20px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        .hero .hotline {
+            display: inline-block;
+            background: #ff6b35;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-size: 28px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .hero .badges {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        .badge-item {
+            text-align: center;
+        }
+        .badge-item .num {
+            font-size: 36px;
+            font-weight: bold;
+            color: #ff6b35;
+        }
+        .badge-item .label {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        /* 服务项目 */
+        .services {
+            padding: 60px 0;
+            background: #fff;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 50px;
+            color: #222;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #ff6b35;
+            margin: 15px auto 0;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .service-card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+        .service-card:hover {
+            border-color: #ff6b35;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(255,107,53,0.15);
+        }
+        .service-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+        .service-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #222;
+        }
+        .service-card p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* 为什么选择我们 */
+        .why-us {
+            padding: 60px 0;
+            background: #f8f9fa;
+        }
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .why-item {
+            text-align: center;
+            padding: 20px;
+        }
+        .why-item .icon {
+            width: 70px;
+            height: 70px;
+            background: #ff6b35;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            margin: 0 auto 15px;
+        }
+        .why-item h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #222;
+        }
+        .why-item p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* 服务区域 */
+        .areas {
+            padding: 60px 0;
+            background: #fff;
+        }
+        .area-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 30px;
+        }
+        .area-tag {
+            background: #f0f4ff;
+            color: #0f3460;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        /* 常见问题 */
+        .faq {
+            padding: 60px 0;
+            background: #f8f9fa;
+        }
+        .faq-item {
+            background: #fff;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+        .faq-question {
+            padding: 18px 25px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff;
+        }
+        .faq-question:hover {
+            background: #f8f9fa;
+        }
+        .faq-answer {
+            padding: 0 25px 18px;
+            color: #666;
+            display: none;
+        }
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        /* 底部CTA */
+        .cta-bottom {
+            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+        }
+        .cta-bottom h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .cta-bottom p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+        .cta-bottom .phone-big {
+            font-size: 42px;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        /* 页脚 */
+        .footer {
+            background: #1a1a2e;
+            color: #999;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        /* 移动端适配 */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 28px;
+            }
+            .hero .hotline {
+                font-size: 22px;
+                padding: 12px 30px;
+            }
+            .hero .badges {
+                gap: 20px;
+            }
+            .badge-item .num {
+                font-size: 26px;
+            }
+            .section-title {
+                font-size: 24px;
+            }
+            .phone-btn {
+                font-size: 14px;
+                padding: 10px 18px;
+            }
+            .logo {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 顶部导航 -->
+<header class="header">
+    <div class="container header-inner">
+        <div class="logo">
+            悟空道路救援
+            <span>聊城站</span>
+        </div>
+        <a href="tel:400-808-2010" class="phone-btn">📞 400-808-2010</a>
+    </div>
+</header>
+
+<!-- 首屏Banner -->
+<section class="hero">
+    <div class="container">
+        <h1>聊城<span>24小时道路救援</span> 我们随叫随到</h1>
+        <p class="subtitle">汽车搭电 | 拖车救援 | 送油送水 | 换胎补胎 | 困境救援</p>
+        <div class="hotline">📞 救援热线：400-808-2010</div>
+        <p style="opacity: 0.8; margin-top: 10px;">聊城全市区平均30分钟到达 · 全年无休</p>
+
+        <div class="badges">
+            <div class="badge-item">
+                <div class="num">24h</div>
+                <div class="label">全天候服务</div>
+            </div>
+            <div class="badge-item">
+                <div class="num">30min</div>
+                <div class="label">快速到达</div>
+            </div>
+            <div class="badge-item">
+                <div class="num">500+</div>
+                <div class="label">救援师傅</div>
+            </div>
+            <div class="badge-item">
+                <div class="num">10万+</div>
+                <div class="label">成功救援</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 服务项目 -->
+<section class="services">
+    <div class="container">
+        <h2 class="section-title">我们的服务项目</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🚗</div>
+                <h3>拖车救援</h3>
+                <p>车辆故障、事故拖运，平板拖车不伤车，聊城全市及周边高速均可救援</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔋</div>
+                <h3>搭电换电瓶</h3>
+                <p>车辆亏电打不着火，上门搭电启动，更换各类汽车电瓶，以旧换新</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">⛽</div>
+                <h3>紧急送油</h3>
+                <p>半路没油抛锚，送油上门，92/95/98号汽油及柴油，按实收费</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🛞</div>
+                <h3>换胎补胎</h3>
+                <p>爆胎、漏气现场更换备胎，修补轮胎，更换新胎，自带工具设备</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🏔️</div>
+                <h3>困境救援</h3>
+                <p">车辆陷沟、掉坑、卡底盘、侧翻等困境，专业脱困设备救援</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔑</div>
+                <h3>开锁配钥匙</h3>
+                <p>车门锁死、钥匙锁车里、钥匙丢失，专业开锁，不破坏车门</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 为什么选择我们 -->
+<section class="why-us">
+    <div class="container">
+        <h2 class="section-title">为什么选择悟空道路救援</h2>
+        <div class="why-grid">
+            <div class="why-item">
+                <div class="icon">⚡</div>
+                <h4>响应快</h4>
+                <p>聊城城区15分钟派单，平均30分钟到达现场，不耽误您的时间</p>
+            </div>
+            <div class="why-item">
+                <div class="icon">💰</div>
+                <h4>明码标价</h4>
+                <p>电话报价，一口价，中途不加价，无隐形消费，透明放心</p>
+            </div>
+            <div class="why-item">
+                <div class="icon">👷</div>
+                <h4>专业师傅</h4>
+                <p>5年以上经验救援师傅，持证上岗，技术过硬，不伤车</p>
+            </div>
+            <div class="why-item">
+                <div class="icon">🛡️</div>
+                <h4>安全保障</h4>
+                <p>全程保险覆盖，车辆损伤有赔付，服务有保障，安心省心</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 服务区域 -->
+<section class="areas">
+    <div class="container">
+        <h2 class="section-title">聊城服务区域</h2>
+        <p style="text-align: center; color: #666;">聊城全境及周边高速均可救援，覆盖以下区域：</p>
+        <div class="area-list">
+            <span class="area-tag">东昌府区</span>
+            <span class="area-tag">茌平区</span>
+            <span class="area-tag">临清市</span>
+            <span class="area-tag">阳谷县</span>
+            <span class="area-tag">莘县</span>
+            <span class="area-tag">东阿县</span>
+            <span class="area-tag">冠县</span>
+            <span class="area-tag">高唐县</span>
+            <span class="area-tag">聊城开发区</span>
+            <span class="area-tag">聊城高新区</span>
+            <span class="area-tag">江北水城旅游度假区</span>
+            <span class="area-tag">青银高速</span>
+            <span class="area-tag">济聊高速</span>
+            <span class="area-tag">德上高速</span>
+        </div>
+    </div>
+</section>
+
+<!-- 常见问题 -->
+<section class="faq">
+    <div class="container">
+        <h2 class="section-title">常见问题</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                救援大概多久能到？
+                <span>+</span>
+            </div>
+            <div class="faq-answer">
+                聊城城区内一般20-30分钟到达，郊区及下辖县城40-60分钟，高速路段根据距离确定，派单时会告知预计到达时间。
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                收费标准是怎样的？会不会乱加价？
+                <span>+</span>
+            </div>
+            <div class="faq-answer">
+                我们实行电话报价制度，派单前告知费用，双方确认后师傅再出发。到达后中途不涨价，无隐形消费。具体费用根据服务类型和距离而定，搭电一般50-100元，拖车根据公里数计算。
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                晚上和节假日也能救援吗？
+                <span>+</span>
+            </div>
+            <div class="faq-answer">
+                可以的。我们是24小时全年无休服务，半夜、周末、法定节假日都正常接单，收费标准不变。
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                拖车会伤到我的车吗？
+                <span>+</span>
+            </div>
+            <div class="faq-answer">
+                我们全部使用平板拖车，车辆整体抬运上车，不会损伤底盘和轮胎。师傅都是5年以上经验，操作规范，全程有保险。
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 底部CTA -->
+<section class="cta-bottom">
+    <div class="container">
+        <h2>车辆抛锚别着急</h2>
+        <p>打个电话，悟空救援马上到</p>
+        <div class="phone-big">400-808-2010</div>
+        <p style="margin-top: 20px; font-size: 16px;">24小时在线 · 聊城全市覆盖 · 30分钟到达</p>
+    </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 悟空道路救援 聊城站 | 24小时救援热线：400-808-2010</p>
+        <p style="margin-top: 8px;">服务区域：东昌府区 / 茌平区 / 临清市 / 阳谷县 / 莘县 / 东阿县 / 冠县 / 高唐县</p>
+    </div>
+</footer>
+
+<script>
+    // FAQ 展开收起
+    document.querySelectorAll('.faq-question').forEach(q => {
+        q.addEventListener('click', () => {
+            const item = q.parentElement;
+            item.classList.toggle('active');
+            const span = q.querySelector('span');
+            span.textContent = item.classList.contains('active') ? '−' : '+';
+        });
+    });
+</script>
+
+</body>
+</html>
